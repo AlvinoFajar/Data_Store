@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.pnm.datastore">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DataStore">
+        <activity android:name=".AllKategori"></activity>
+        <activity android:name=".Kategori8" />
+        <activity android:name=".Kategori7" />
+        <activity android:name=".Kategori6" />
+        <activity android:name=".Kategori5" />
+        <activity android:name=".Kategori4" />
+        <activity android:name=".Kategori3" />
+        <activity android:name=".listProduk2" />
+        <activity android:name=".Kategori2" />
+        <activity android:name=".MainLogin" />
+        <activity android:name=".Settings" />
+        <activity android:name=".EditProduk" />
+        <activity android:name=".Kategori1" />
+        <activity android:name=".TambahProduk" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

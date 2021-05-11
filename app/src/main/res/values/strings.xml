@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Data Store</string>
+
+    <string-array name="Kategori">
+        <item>Sabun</item>
+        <item>Mie</item>
+        <item>Susu</item>
+        <item>Obat</item>
+        <item>Snack</item>
+        <item>Minuman</item>
+        <item>Kebutuhan_Pokok</item>
+        <item>Lainnya</item>
+    </string-array>
+
+</resources>

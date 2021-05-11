@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/bg_top"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_announ"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:id="@+id/SearchData"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Search All"
+                        android:imeOptions="actionDone"
+                        android:background="@null"/>
+
+                    <ImageView
+                        android:id="@+id/btnSearch"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/search"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_announ"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/settings"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/datastore"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="140dp"/>
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kategori Produk"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#000000" />
+
+                        <ImageButton
+                            android:id="@+id/btntambah"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_input"
+                            android:layout_marginLeft="200dp"
+                            android:src="@drawable/ic_baseline_add_24"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="101dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnSabun"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/soap"/>
+
+                            <TextView
+                                android:id="@+id/txtSabun"
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Sabun"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnMie"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                 android:background="@drawable/mie"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Mie"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnSusu"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                 android:background="@drawable/susu"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Susu"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnObat"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                 android:background="@drawable/obat"/>
+
+                            <TextView
+                                android:id="@+id/txtObat"
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Obat"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="101dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnSnack"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                 android:background="@drawable/snack"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Snack"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnMinuman"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/minuman"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Minuman"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnPokok"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                 android:background="@drawable/pokok"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Kebutuhan Pokok"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="#FFFFFF"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/btnLainnya"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                 android:background="@drawable/lainnya"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Lainnya"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layPengumuman"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:padding="5dp"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/slider"
+                app:delay="0"
+                app:period="3000"
+                app:corner_radius="10"
+                app:auto_cycle="true"
+                app:placeholder="@drawable/pengumuman">
+            </com.denzcoskun.imageslider.ImageSlider>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
